@@ -103,7 +103,7 @@
 
 // =========
 
-let a = 20;
+// let a = 20;
 // let b = 10;
 // let c = "10";
 
@@ -113,4 +113,7 @@ let a = 20;
 // console.log(c <= b);     //true
 // console.log(c == b);    //true
 // console.log(c === b);  //false
+
+
+
 
