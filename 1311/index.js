@@ -114,6 +114,47 @@
 // console.log(c == b);    //true
 // console.log(c === b);  //false
 
+// ===========
+// let a="222";
+// let b ="32";
+
+// console.log(a>b);
+
+// ===========
+// let a = 1;
+// let b = 2;
+
+// console.log(a != b);
+// console.log(a !== b);
+
+// Logical operations
+
+// a=true;
+// b=true;
+
+// console.log(a  == true || b == true);
+
+
+// a=true;
+// b=true;
+
+// console.log(a || b );
+
+// ========
+
+// a = true;
+// b = true;
+
+// console.log (a && b);
+
+
+a = false;
+b =  true;
+
+console.log (a && b);
+
+
+
 
 
 
