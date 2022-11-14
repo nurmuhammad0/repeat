@@ -148,10 +148,10 @@
 // console.log (a && b);
 
 
-a = false;
-b =  true;
+// a = false;
+// b =  true;
 
-console.log (a && b);
+// console.log (a && b);
 
 
 
