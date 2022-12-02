@@ -24,17 +24,15 @@
 
 
 
-let series = {
-    John :100,
-    Ann :160,
-    Pete :130
+// let series = {
+//     John :100,
+//     Ann :160,
+//     Pete :130
 
-}
-for (let i in series){
-    for(let j in series){
-        if(i < j)
-        console.log(j);
-        else console.log(i);
-    }
-}
+// }
+// if(series.John > series.Ann){
+//     console.log(true);
+// }
+
+console.log(`Welcome ${name} IT center`);
 
