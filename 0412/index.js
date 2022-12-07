@@ -72,9 +72,56 @@
 //    }
 //}
 
-let arr = [[1, "one", 2, "two"], [3, "three", 4, "four"]];
-for (var i = 0; i < arr.length; i++) {
-   for (var j = 0; j < arr[i].length; j++) {
-      console.log(arr [i][j]);
-   }
+// let arr = [[1, "one", 2, "two"], [3, "three", 4, "four"]];
+// for (var i = 0; i < arr.length; i++) {
+//    for (var j = 0; j < arr[i].length; j++) {
+//       console.log(arr [i][j]);
+//    }
+// }
+
+
+
+
+// let obj={
+//    title:"Webbrain",
+//    age:2,
+//    child:{
+//       age:4,
+//       name:"Webbrain",
+//       child:{
+//          age:3
+//       }
+//    }
+// }
+// let sum =obj.age;
+// while("child" in obj){
+//    obj=obj.child;
+//    sum+=obj.age;
+// }
+// console.log(sum);
+
+
+// let obj ={
+//    if:1,
+//    name:"Webbrain",
+//    offline:true,
+//    online:true,
+//    individual:true
+// }
+// let res={};
+// for(i in obj){
+//    if(obj[i]===true|| obj[i]===false)
+//    res[i]=obj[i]
+// }
+
+let str="Webr@in Ac@demy";
+let str2=""
+for(i of str){
+   if(i==="@")
+      str2+="a";
+
+   else
+      str2+=i
+   
 }
+console.log(str2);
