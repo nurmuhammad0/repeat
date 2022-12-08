@@ -1,127 +1,93 @@
-// // filter()
+// CRUD
+//Creat
+//Read
+//Update
+//Delete
 
-// // let num=[1,2,4,5,7,8,9];
-// // let res=num.filter((value,index)=> value < 5)
-// // console.log(res);
+// // Read
 
-// // let str=["orange","apple","kiwi","banana"];
+// let users=[
+//    {id:1,name:"Muhammad",age:18,job:"Front-end developer"},
+//    {id:2,name:"Salohiddin",age:20,job:"Teacher"},
+//    {id:3,name:"AbuBakr",age:12,job:"pupil"},
+//    {id:4,name:"AbuTolib",age:23,job:"Support-menter"},
+//    {id:5,name:"Umar",age:22,job:"Notiq"},
+//    {id:6,name:"Usmon",age:19,job:"Shoir"},
+//    {id:7,name:"Ali",age:16,job:"Kotib"},
+//    {id:8,name:"Temur",age:14,job:"Vazir"},
+// ]
+// console.log(users[0]);
 
-// // let res=str.filter((value,index)=> value.length<5)
-// // console.log(res);
-
-
-// // let obj=[
-// //     {id:1,year:2000,name:"Muhammad"},
-// //     {id:2,year:2002,name:"Muhammadn"},
-// //     {id:3,year:2001,name:"Muhammadm"},
-// //     {id:4,year:2005,name:"Muhammada"},
-// //     {id:5,year:2007,name:"Muhammadd"},
-// //     {id:6,year:2006,name:"Muhammadk"}
-// // ]
-// // let res=obj.filter((value,index)=> value.year===2007)
-// // console.log(res);
-
-
-
-// // sort();
+// function sortByAge(data){
+//    return data.sort((a,b)=>b.age-a.age)
+// }
+// console.log(sortByAge(users));
 
 
-
-// // let num=[1,4,3,2,8,6,5,22];
-// // let res=num.sort((a,b)=>a-b)
-// // console.log(res);
-
-
-// //  let str=["orange","apple","Kiwi","banana"];
-
-// // let res=str.sort((a,b)=>a.localeCompare(b))
-// // console.log(res);
-
-// // console.log("salom"); S
+// function filterByAge(user){
+//    return user.filter((item)=>item.age>18)
+// }
+// console.log(filterByAge(users));
 
 
-// // function mystery() {
-// //     var results =
-// //       {sanity: 'Hello'};
-// //     console.log(results);      
-// //   }
-// // mystery();
-// let num=1;
-// let boolean=true;
-// sum=0;
-//  for(let i=2;i<num;i++){
-//    if(num % i== 0){
-//       sum+=i;
-//    }
+
+//Create
+
+
+// let users=[
+//    {id:1,name:"Muhammad",age:18,job:"Front-end developer"},
+//    {id:2,name:"Salohiddin",age:20,job:"Teacher"},
+//    {id:3,name:"AbuBakr",age:12,job:"pupil"},
+//    {id:4,name:"AbuTolib",age:23,job:"Support-menter"},
+//    {id:5,name:"Umar",age:22,job:"Notiq"},
+//    {id:6,name:"Usmon",age:19,job:"Shoir"},
+//    {id:7,name:"Ali",age:16,job:"Kotib"},
+//    {id:8,name:"Temur",age:14,job:"Vazir"},
+// ]
+
+
+// function addUser(user){
+//    users.push(user);
+//    return users;
+// }
+// console.log(addUser({id:10,name:"Shamsiddin",age:22}));
+
+
+
+// Update
+// let users=[
+//    {id:1,name:"Muhammad",age:18,job:"Front-end developer"},
+//    {id:2,name:"Salohiddin",age:20,job:"Teacher"},
+//    {id:3,name:"AbuBakr",age:12,job:"pupil"},
+//    {id:4,name:"AbuTolib",age:23,job:"Support-menter"},
+//    {id:5,name:"Umar",age:22,job:"Notiq"},
+//    {id:6,name:"Usmon",age:19,job:"Shoir"},
+//    {id:7,name:"Ali",age:16,job:"Kotib"},
+//    {id:8,name:"Temur",age:14,job:"Vazir"},
+// ]
+
+// function updateUser(id,key,value){
+//    return users.filter((item)=>(item.id===id?(item[key])=value:item));
+// }
+// console.log(updateUser(3,"age",14));
+
+
+
+// Delete
+let users=[
+      {id:1,name:"Muhammad",age:18,job:"Front-end developer"},
+      {id:2,name:"Salohiddin",age:20,job:"Teacher"},
+      {id:3,name:"AbuBakr",age:12,job:"pupil"},
+      {id:4,name:"AbuTolib",age:23,job:"Support-menter"},
+      {id:5,name:"Umar",age:22,job:"Notiq"},
+      {id:6,name:"Usmon",age:19,job:"Shoir"},
+      {id:7,name:"Ali",age:16,job:"Kotib"},
+      {id:8,name:"Temur",age:14,job:"Vazir"},
+   ]
    
-//  }
-//  if(sum>0){
-//    console.log(`${num} is not prime`);
-// }else{
-//    console.log(`${num} is prime`);
-// }
 
-
-// for(i=2;i<10;i++){
-//    console.log(`${i} karra jadvali`);
-//    for(j=1;j<=10;j++){
-//       console.log(`${i} * ${j} == ${i * j} `);
-//       if(j==10){
-//          console.log(" ");
-//       }
-//    }
-//}
-
-// let arr = [[1, "one", 2, "two"], [3, "three", 4, "four"]];
-// for (var i = 0; i < arr.length; i++) {
-//    for (var j = 0; j < arr[i].length; j++) {
-//       console.log(arr [i][j]);
-//    }
-// }
-
-
-
-
-// let obj={
-//    title:"Webbrain",
-//    age:2,
-//    child:{
-//       age:4,
-//       name:"Webbrain",
-//       child:{
-//          age:3
-//       }
-//    }
-// }
-// let sum =obj.age;
-// while("child" in obj){
-//    obj=obj.child;
-//    sum+=obj.age;
-// }
-// console.log(sum);
-
-
-// let obj ={
-//    if:1,
-//    name:"Webbrain",
-//    offline:true,
-//    online:true,
-//    individual:true
-// }
-// let res={};
-// for(i in obj){
-//    if(obj[i]===true|| obj[i]===false)
-//    res[i]=obj[i]
-// }
-
-let str="Webr@in Ac@demy";
-let str2=""
-for(i of str){
-   if(i==="@")
-      str2+="a";
-
-   else
-      str2+=i
-   
-}
-console.log(str2);
+   function deleteUser(id){
+      return users=users.filter((item)=>(item.id!==id?item:null))
+   }
+   deleteUser(3)
+   console.log(deleteUser());
