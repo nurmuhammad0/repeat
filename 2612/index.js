@@ -78,9 +78,12 @@
 
 // console.log(a, b, c);
 
-function SingleCharacterChangePalindrome(str) {
-    const diff = [...str].reverse().filter((x, i) => x != str[i]).length;
+// function SingleCharacterChangePalindrome(str) {
+//     const diff = [...str].reverse().filter((x, i) => x != str[i]).length;
   
-    return diff == 2 || (diff == 0 && str.length % 2 == 1);
-  }
-  console.log(SingleCharacterChangePalindrome("abbaa"));
+//     return diff == 2 || (diff == 0 && str.length % 2 == 1);
+//   }
+//   console.log(SingleCharacterChangePalindrome("abbaa"));
+
+
+// console.log("Hello World!");2
